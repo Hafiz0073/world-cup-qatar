@@ -1,0 +1,123 @@
+/* font  */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Poppins:wght@400;500&display=swap');
+
+
+
+/* base and utility  */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0px;
+    padding: 0px;
+
+}
+
+main {}
+
+.container {
+    width: 1050px;
+    margin: 50px 140px;
+}
+
+/* banner section */
+.main-banner {
+    display: flex;
+    align-items: center;
+    background-color: rgb(22 3 3);
+    color: white;
+    border-radius: 25px;
+}
+
+.banner-left {
+    padding: 15px 2px 15px 45px;
+}
+
+
+.banner-heading {
+    font-size: 60px;
+
+}
+
+.banner-text {
+    font-size: 18px;
+    margin-top: -30px;
+}
+
+.banner-button {
+    background-color: red;
+    color: white;
+    padding: 10px;
+    font-size: 17px;
+    border-radius: 10px;
+    font-weight: 700
+}
+
+.banner-right {
+    padding: 25px 35px 0px 4px;
+}
+
+.banner-right img {
+    width: 451px;
+    height: 552px;
+}
+
+/* submenu section  */
+.blogs {
+    display: flex;
+
+}
+
+.side-menu {
+    width: 250px;
+    height: 250px;
+    color: white;
+    background-color: rgb(22 3 3);
+    border-radius: 10px;
+    margin-right: 5px;
+}
+
+.side-menu a {
+    display: block;
+    background-color: whitesmoke;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 20px;
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    font-size: 17px;
+}
+
+#active {
+    background-color: red;
+    color: white;
+}
+
+/* blog section  */
+
+
+.blogs-info {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border-radius: 6px;
+}
+
+.blog {
+    margin: 8px 7px;
+}
+
+.blog-title {
+    padding: 8px;
+    font-weight: 600;
+    margin-right: 8px;
+}
+
+.blog-button {
+    border-radius: 5px;
+    padding: 5px 9px;
+    font-weight: 600;
+}
+
+.time-comment {
+    display: flex;
+    justify-content: space-around;
+}
