@@ -14,7 +14,7 @@ body {
 main {}
 
 .container {
-    width: 1050px;
+    width: 1127px;
     margin: 50px 140px;
 }
 
@@ -33,7 +33,7 @@ main {}
 
 
 .banner-heading {
-    font-size: 60px;
+    font-size: 50px;
 
 }
 
@@ -105,7 +105,7 @@ main {}
     margin: 8px 7px;
 }
 
-.blog-title {
+.blog-title>.blog-content {
     padding: 8px;
     font-weight: 600;
     margin-right: 8px;
@@ -119,5 +119,43 @@ main {}
 
 .time-comment {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
+
+}
+
+
+
+/* footer atyle  */
+
+.footer-menu {
+    width: 100%;
+    height: 270px;
+    padding-top: 150px;
+    text-align: center;
+    color: white;
+    background-color: #333;
+
+}
+
+.footer-menu h1 {
+    font-size: 40px;
+}
+
+
+.footer-menu ul {
+    list-style-type: none;
+    margin: 0;
+    overflow: hidden;
+}
+
+.footer-menu li {
+    float: left;
+}
+
+.footer-menu li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 19px 49px;
+    text-decoration: none;
 }
