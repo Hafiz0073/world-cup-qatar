@@ -11,7 +11,6 @@ body {
 
 }
 
-main {}
 
 .container {
     width: 1127px;
@@ -48,7 +47,18 @@ main {}
     padding: 10px;
     font-size: 17px;
     border-radius: 10px;
-    font-weight: 700
+    font-weight: 700;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.banner-button:hover {
+    padding-right: 25px;
+}
+
+.banner-button:hover:after {
+    opacity: 3;
+    right: 0;
 }
 
 .banner-right {
@@ -119,14 +129,16 @@ main {}
 
 .time-comment {
     display: flex;
-    justify-content: space-evenly;
 
 }
 
+.comment {
+    padding-left: 9px;
+}
 
 
 /* footer atyle  */
-
+/* 
 .footer-menu {
     width: 100%;
     height: 270px;
@@ -134,7 +146,7 @@ main {}
     text-align: center;
     color: white;
     background-color: #333;
-
+    position: absolute;
 }
 
 .footer-menu h1 {
@@ -158,4 +170,171 @@ main {}
     text-align: center;
     padding: 19px 49px;
     text-decoration: none;
+} */
+.footer-items {
+    margin: 0;
+    padding: 0;
+    background-color: #161616;
 }
+
+.footer-heading {
+    text-align: center;
+    font-size: 40px;
+    padding-top: 50px;
+    color: white;
+}
+
+.hr {
+    margin: -40px 297px 25px;
+    color: #B9B9B9;
+}
+
+
+
+.quick-links {
+    display: flex;
+}
+
+.quick-links ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0 auto;
+}
+
+.quick-links a {
+    text-decoration: none;
+    padding: 15px 10px;
+    color: white;
+    font-size: 19px;
+
+}
+
+.social {
+    display: flex;
+    padding-top: 25px;
+}
+
+.social ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    margin: 0 auto;
+
+}
+
+.social-icons {
+    padding: 10px 15px;
+    font-size: 30px;
+}
+
+.social-icons a {
+    text-decoration: none;
+    font-size: 35px;
+    color: aqua;
+
+}
+
+.copyright {
+    background-color: black;
+    text-align: center;
+    color: gainsboro;
+    padding: 10px;
+}
+
+/* responsive for mobile  */
+@media only screen and (max-width: 688px) {
+    .container {
+        width: 100%;
+    }
+
+
+    .main-banner {
+        display: grid;
+        justify-content: center;
+        grid-template-columns: repeat(1 1fr);
+
+    }
+
+    .banner-left {
+        text-align: center;
+    }
+
+    .banner-right img {
+        justify-content: center;
+    }
+
+    .blogs {
+        display: grid;
+        justify-content: center;
+    }
+
+    .side-menu {
+        align-items: center;
+        width: 100%;
+    }
+
+    .blogs-info {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+    }
+
+    @media only screen and (max-width: 992px) {
+        .container {
+            width: 100%;
+        }
+
+        .main-banner {
+            display: flex;
+            justify-content: center;
+
+        }
+
+        .banner-left {
+            text-align: center;
+        }
+
+        .banner-right img {
+            justify-content: center;
+        }
+
+        .blogs {
+            display: inline-block;
+            justify-content: center;
+        }
+
+        .side-menu {
+            align-items: center;
+            width: 100%;
+        }
+
+        .blogs-info {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            width: 100%;
+        }
+
+        .banner-left {
+            text-align: center;
+        }
+
+        .banner-right img {
+            justify-content: center;
+        }
+
+        .blogs {
+            display: grid;
+            justify-content: center;
+        }
+
+        .side-menu {
+            align-items: center;
+            width: 100%;
+        }
+
+        .blogs-info {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            width: 100%;
+        }
