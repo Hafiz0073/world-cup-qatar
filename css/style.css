@@ -159,7 +159,7 @@ body {
 
 }
 
-/* footer atyle  */
+/* footer style  */
 
 .footer-items {
     margin: 0;
@@ -200,6 +200,7 @@ body {
 
 }
 
+/* social media  */
 .social {
     display: flex;
     padding-top: 25px;
@@ -232,17 +233,25 @@ body {
     padding: 10px;
 }
 
+/* footer end  */
 /* responsive for mobile  */
 @media only screen and (max-width: 688px) {
+    body {
+        margin: 0px;
+        padding: 0px
+    }
+
     .container {
+        padding: 1px 1px;
         width: 100%;
     }
 
 
     .main-banner {
-        display: grid;
+        display: flex;
+        flex-direction: column;
         justify-content: center;
-        grid-template-columns: repeat(1 1fr);
+
 
     }
 
@@ -270,61 +279,65 @@ body {
         width: 100%;
     }
 
-    @media only screen and (max-width: 992px) {
-        .container {
-            width: 100%;
-        }
+    .footer-items {
+        width: 0 auto;
+        margin: 0 auto;
+    }
 
-        .main-banner {
-            display: flex;
-            justify-content: center;
+}
 
-        }
+@media only screen and (max-width: 992px) and (min-width:688px) {
+    .container {
+        width: 100%;
+    }
 
-        .banner-left {
-            text-align: center;
-        }
+    .main-banner {
+        display: flex;
+        justify-content: center;
 
-        .banner-right img {
-            justify-content: center;
-        }
+    }
 
-        .blogs {
-            display: inline-block;
-            justify-content: center;
-        }
+    .banner-left {
+        text-align: center;
+    }
 
-        .side-menu {
-            align-items: center;
-            width: 100%;
-        }
+    .banner-right img {
+        justify-content: center;
+    }
 
-        .blogs-info {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            width: 100%;
-        }
+    .blogs {
+        display: grid;
+        justify-content: center;
+    }
 
-        .banner-left {
-            text-align: center;
-        }
+    .side-menu {
+        align-items: center;
+        width: 100%;
+    }
 
-        .banner-right img {
-            justify-content: center;
-        }
+    .blogs-info {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+    }
 
-        .blogs {
-            display: grid;
-            justify-content: center;
-        }
+    .banner-left {
+        text-align: center;
+    }
 
-        .side-menu {
-            align-items: center;
-            width: 100%;
-        }
+    .banner-right img {
+        justify-content: center;
+    }
 
-        .blogs-info {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            width: 100%;
-        }
+    .blogs {
+        display: grid;
+        justify-content: center;
+    }
+
+    .side-menu {
+        align-items: center;
+        width: 100%;
+    }
+
+
+}
